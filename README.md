@@ -1,2 +1,4 @@
 # BeerInventoryFailorService
-Failover service for the beer inventory service (circuit breaker)
+
+Failover service for the beer inventory service (circuit breaker) \
+For mo
