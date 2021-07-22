@@ -21,6 +21,8 @@
         <maven.compiler.target>15</maven.compiler.target>
         <java.version>15</java.version>
         <spring-cloud.version>2020.0.3</spring-cloud.version>
+        <zipkin.version>2.2.8.RELEASE</zipkin.version>
+        <logback.encoder.version>6.6</logback.encoder.version>
     </properties>
 
     <dependencies>
@@ -31,6 +33,17 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+            <version>${zipkin.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>${logback.encoder.version}</version>
         </dependency>
 
         <dependency>
